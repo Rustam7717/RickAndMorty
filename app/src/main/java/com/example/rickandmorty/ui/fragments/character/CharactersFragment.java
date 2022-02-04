@@ -1,9 +1,7 @@
 package com.example.rickandmorty.ui.fragments.character;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
@@ -14,22 +12,16 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.paging.PagedList;
 import androidx.recyclerview.widget.DiffUtil;
-
 import com.example.rickandmorty.R;
 import com.example.rickandmorty.base.BaseFragment;
 import com.example.rickandmorty.common.OnItemClick;
-import com.example.rickandmorty.common.Resource;
 import com.example.rickandmorty.data.models.CustomCharacter;
-import com.example.rickandmorty.data.models.MainResponse;
 import com.example.rickandmorty.databinding.FragmentCharactersBinding;
 import com.example.rickandmorty.ui.adapters.CharacterAdapter;
 import com.example.rickandmorty.ui.adapters.CharactersPagedAdapter;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanIntentResult;
 import com.journeyapps.barcodescanner.ScanOptions;
-
-import javax.security.auth.login.LoginException;
-
 import dagger.hilt.android.AndroidEntryPoint;
 
 @AndroidEntryPoint
